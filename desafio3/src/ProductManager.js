@@ -1,6 +1,6 @@
-const fs = require("fs")
+import fs from "fs"
 
-class ProductManager {
+export default class ProductManager {
     constructor(path) {
         this.path = path,
             this.products = []
@@ -98,18 +98,3 @@ class ProductManager {
         await fs.promises.writeFile(this.path, JSON.stringify(productswithoutfound, null, 2))
     }
 }
-
-async function generator() {
-
-    const productmanager = new ProductManager("../files/products.json");
-    const solo = await productmanager.getProductbyId(3)
-
-
-    console.log(solo)
-}
-
-generator()
-
-export default {
-    ProductManager,
-};
