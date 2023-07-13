@@ -1,8 +1,13 @@
-import express from "express"
-import ProductManager from "./productManager.js";
-const manager = new ProductManager("../files/products.json");
+import express from "express";
+import { __dirname } from "../utils.js"
+import ProductManager from "./ProductManager.js";
 const app = express()
+const manager =new ProductManager(__dirname+"/files/products.json");
 const PORT = 8080;
+
+app.get("/", (req, res) => {
+    res.send("hola mundo");
+  });
 
 app.get("/products",async(req,res)=>{
     const {limit}=req.query
@@ -18,12 +23,16 @@ app.get("/products",async(req,res)=>{
 })
 
 app.get("/products/:pid",async(req,res)=>{
-    const {pid}=req.params
-
-    const products= await manager.getProducts()
-    const productfind=products.find(elemento=>elemento.id===parseInt(pid))
-    console.log(productfind)
-    res.send({status:"success",productfind})
+    const { pid } = req.params;
+    let productfound= await manager.getProductbyId(parseInt(pid))
+    
+    if (productfound){
+        res.json({status:"success",productfound})
+    } else {
+        res.json({
+            message: "el producto solicitado no existe",
+          });
+        }
 })
 
 
