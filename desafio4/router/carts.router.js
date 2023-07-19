@@ -13,7 +13,13 @@ router.get("/carts",async(req,res)=>{
 
 router.get("/carts/:cid",async(req,res)=>{
     const cartfound=await manager.getCartbyId(req.params)
-    res.send({status:"success",cartfound})
+    if (cartfound){
+        res.json({status:"success",cartfound})
+    } else {
+        res.json({
+            message: "el carrito solicitado no existe",
+          });
+        }
 })
 
 router.post("/carts",async(req,res)=>{

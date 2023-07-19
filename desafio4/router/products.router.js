@@ -7,22 +7,12 @@ const manager =new ProductManager(__dirname+"/files/products.json")
 const router=Router()
 
 router.get("/products",async(req,res)=>{
-    const {limit}=req.query
-    const products= await manager.getProducts()
-    if(limit){
-     const limitproducts=products.slice(0,limit)
-     res.json({status:"Success",limitproducts})
-
-    }
-    else{
-        res.json({status:"Success",products})
-    }
+    const listOfProducts= await manager.getProducts(req.query)
+    res.json({message:"success",listOfProducts})
 })
 
 router.get("/products/:pid",async(req,res)=>{
-    const { pid } = req.params;
-    let productfound= await manager.getProductbyId(parseInt(pid))
-    
+    const productfound=await manager.getProductbyId(req.params)
     if (productfound){
         res.json({status:"success",productfound})
     } else {
@@ -34,7 +24,7 @@ router.get("/products/:pid",async(req,res)=>{
 
 router.post("/products",async(req,res)=>{
     const newproduct=await manager.addProduct(req.body)
-    res.send({status:"success",newproduct})
+    res.send({status:"success",message: "el producto se agrego correctamente",newproduct})
 })
 
 router.put("/products/:pid",async(req,res)=>{
@@ -48,4 +38,4 @@ router.delete("/products/:pid",async(req,res)=>{
 })
 
 
-export default router
+export default router 
