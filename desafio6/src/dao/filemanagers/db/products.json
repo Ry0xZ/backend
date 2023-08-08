@@ -1,0 +1,112 @@
+[
+    {
+      "id": 1,
+      "title": "jordan",
+      "description": "jordan",
+      "price": "89000",
+      "thumbnail": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b38436e0-1698-4ccd-ad71-7f64bb805ea6/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+      "category": "zapatillas",
+      "status": true,
+      "code": "109v14",
+      "stock": "13"
+    },
+    {
+      "id": 2,
+      "title": "airmax",
+      "description": "airmax",
+      "price": "78000",
+      "thumbnail": "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw93faeea9/products/NI_DH4759-001/NI_DH4759-001-1.JPG",
+      "category": "zapatillas",
+      "status": true,
+      "code": "14v14v",
+      "stock": "13"
+    },
+    {
+      "id": 3,
+      "title": "dunk",
+      "description": "dunk",
+      "price": "34141",
+      "thumbnail": "https://leaked.cl/store/4066-large_default/zapatillas-nike-dunk-high-all-star-juvenil.jpg",
+      "category": "zapatillas",
+      "status": true,
+      "code": "1v141v14v",
+      "stock": "112"
+    },
+    {
+      "id": 4,
+      "title": "luke",
+      "description": "luke",
+      "price": "50000",
+      "thumbnail": "https://i.blogs.es/02539c/28xp-shoes-05-superjumbo/450_1000.jpeg",
+      "category": "zapatillas",
+      "status": true,
+      "code": "vdv141v",
+      "stock": "11"
+    },
+    {
+      "id": 5,
+      "title": "Air Force 1",
+      "description": "Air Force 1",
+      "price": "55000",
+      "thumbnail": "https://leaked.cl/store/8308-large_default/zapatillas-nike-air-force-1-x-undefeated-azul.jpg",
+      "category": "zapatillas",
+      "status": true,
+      "code": "1v13v13",
+      "stock": "20"
+    },
+    {
+      "id": 6,
+      "title": "Dunk HI SP",
+      "description": "Dunk HI SP",
+      "price": "86000",
+      "thumbnail": "https://shkuze.jp/html/upload/save_image/CZ8149-700-5.jpg",
+      "category": "zapatillas",
+      "status": true,
+      "code": "d1c1414v1",
+      "stock": "17"
+    },
+    {
+      "id": 7,
+      "title": "sb bruin",
+      "description": "sb bruin",
+      "price": "56000",
+      "thumbnail": "https://www.indy.com.ar/cdn/shop/files/zapatillas-nike-sb-bruin-react-boarder-celeste-indy-5.jpg?v=1689191143&width=1946",
+      "category": "zapatillas",
+      "status": true,
+      "code": "v1v4314vc",
+      "stock": "17"
+    },
+    {
+      "id": 8,
+      "title": "Court Borough",
+      "description": "Court Borough",
+      "price": "64500",
+      "thumbnail": "https://falabella.scene7.com/is/image/Falabella/14504357_1?wid=800&hei=800&qlt=70",
+      "category": "zapatillas",
+      "status": true,
+      "code": "c1ec13",
+      "stock": "17"
+    },
+    {
+      "id": 9,
+      "title": "waffle debut",
+      "description": "waffle debut",
+      "price": "64000",
+      "thumbnail": "https://runastore.pe/media/catalog/product/cache/1/image/1600x/040ec09b1e35df139433887a97daa66f/d/x/dx2943-100_1.jpg",
+      "category": "zapatillas",
+      "status": true,
+      "code": "qve1v1",
+      "stock": "12"
+    },
+    {
+      "id": 10,
+      "title": "Curt Royale",
+      "description": "Curt Royale",
+      "price": "45000",
+      "thumbnail": "https://photos6.spartoo.es/photos/202/20297339/20297339_500_A.jpg",
+      "category": "zapatillas",
+      "status": true,
+      "code": "dv1v31b",
+      "stock": "14"
+    }
+  ]
